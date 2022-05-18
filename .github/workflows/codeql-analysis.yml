@@ -30,8 +30,9 @@ jobs:
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v2
-
+      - name: Build
+        run: |
+          dotnet restore
+          dotnet build TemplateProject.sln
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
