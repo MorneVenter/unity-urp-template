@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: "17 13 * * 6"
+    - cron: "23 2 * * 2"
 
 jobs:
   analyze:
@@ -30,7 +30,6 @@ jobs:
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
-
       - name: Autobuild
         uses: github/codeql-action/autobuild@v2
 
