@@ -31,7 +31,7 @@ jobs:
         with:
           languages: ${{ matrix.language }}
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore ./TemplateProject.sln
       - name: Build
         run: dotnet build ./TemplateProject.sln --no-restore
       - name: Perform CodeQL Analysis
