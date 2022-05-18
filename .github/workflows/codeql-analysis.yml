@@ -30,10 +30,6 @@ jobs:
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: "4.7.1"
       - name: Install dependencies
         run: dotnet restore
       - name: Build
