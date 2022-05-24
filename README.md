@@ -56,6 +56,7 @@
       |   |-- Editor
       |   |-- Scriptables
       |   |-- Managers
+      |   |-- Controllers
       |   |-- Utilities
       |   |-- Units
       |   |-- Other
@@ -88,6 +89,7 @@
 | Scripts/Editor      | For Editor specific scripts.                                                                                          |
 | Scripts/Scriptables | For scripts meant to transport, store or transform data, like ScriptableObjects.                                      |
 | Scripts/Managers    | For singleton type scripts.                                                                                           |
+| Scripts/Controllers | For controller scripts.                                                                                               |
 | Scripts/Utilities   | For utilty scripts used across the project.                                                                           |
 | Scripts/Units       | For implementations of scripts or other resources.                                                                    |
 | \_ExternalAssets    | This is a reflection of the Assets folder, but meant for external assets you want to keep seperate from your project. |
